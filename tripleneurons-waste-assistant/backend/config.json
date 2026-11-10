@@ -1,0 +1,31 @@
+{
+  "group": "TripleNeurons",
+  "knowledge_base": [
+    "DAO_2013-22.pdf",
+    "NSWMC_Guidebook.pdf",
+    "RA9003_Info_Material.pdf",
+    "RA_6969.pdf",
+    "RA_9003.pdf"
+  ],
+  "selected_config": {
+    "config": "C4",
+    "chunk_size": 800,
+    "chunk_overlap": 0,
+    "tests": "Medium chunks, no overlap"
+  },
+  "chunk_size": 800,
+  "chunk_overlap": 0,
+  "top_k": 3,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "normalize_embeddings": true,
+  "vector_store": "Chroma (persistent)",
+  "collection": "tripleneurons_waste_kb",
+  "llm": "Qwen/Qwen2.5-1.5B-Instruct",
+  "llm_dtype": "torch.float16",
+  "decoding": "greedy (do_sample=False)",
+  "max_new_tokens": 256,
+  "seed": 42,
+  "ocr": "Tesseract via pytesseract, 250 dpi, pages < 50 chars",
+  "built_by": "TripleNeurons",
+  "built_at": "2026-11-10T16:13:00+08:00"
+}

@@ -1,0 +1,223 @@
+Q_ID,Type,Difficulty,Category,Question,Reference_Answer,Source_Document,Source_Page,Gold_Pages,rag_answer,rag_refusal_flag,retrieved,retrieved_documents,scores,precision_at_k,recall_at_k,hit_at_k,reciprocal_rank,retrieval_s,generation_s,total_s,prompt_tokens,new_tokens,norag_answer,norag_refusal_flag,norag_generation_s,norag_new_tokens,RAG_Verdict_S1,RAG_Verdict_S2,RAG_Final_Verdict,RAG_Grounded,NoRAG_Verdict,Scorer_Notes,Scorers_Agree,RAG_Verdict,RAG_Score,NoRAG_Score
+E1,Answerable,Easy,Segregation and storage,"Under RA 9003, how should a household waste container be labeled for collection?","RA 9003 requires a separate container for each type of waste, and each container must be properly marked or identified for on-site collection as ""compostable"", ""non-recyclable"", ""recyclable"" or ""special waste"" (or any other classification set by the Commission).",RA_9003.pdf,16,RA_9003.pdf:16,"According to Article 3 of RA 9003, there shall be a separate container for each type of waste from all sources. For bulky waste, it suffices if the same is collected and placed in a separate designated area. The solid waste container should be properly marked or identified for on-site collection as follows:
+
+- Compostable
+- Non-recyclable
+- Recyclable
+- Special waste
+or any other classification determined by the Commission.",False,DAO_2013-22.pdf:45; RA_9003.pdf:16; DAO_2013-22.pdf:44,DAO 2013-22 p.45; RA 9003 p.16; DAO 2013-22 p.44,0.6457; 0.6388; 0.6362,0.3333333333333333,1.0,1.0,0.5,0.7267,3.65,4.39,654,95,"RA 9003 refers to Republic Act 9003, which is the Comprehensive Waste Management Act of 2000 in the Philippines. This law aims to regulate the management of solid waste throughout the country.
+
+For household waste containers under this act, they must be clearly labeled with the following information:
+
+1. **Type of Waste**: The container should indicate whether it contains recyclable materials (e.g., paper, plastic), hazardous waste (e.g., batteries, electronics), or non-recyclable waste (e.g., food scraps).
+
+2. **Color Coding**: Containers may also have color-coded labels based on their type:
+   - Recyclables: Typically green.
+   - Hazardous waste: Usually yellow or red.
+   - Non-recyclable waste: Often black or brown.
+
+3. **Identification Markings**: Some containers might include additional markings such as ""DO NOT MIX"" to prevent contamination that could affect recycling efficiency.
+
+4. **Size and Quantity**: The size and quantity of waste that can be placed in each container should comply with local regulations and guidelines set by municipal authorities.
+
+5. **Date Labels**: Containers may have date labels indicating when they were last cleaned or emptied, helping to manage waste flow more effectively.
+
+6. **",False,8.95,256,Partly correct,Correct,Partly correct,Y,Incorrect,All 4 labels correct but cites “Article 3” instead of Sec. 22. No-RAG invents colour coding.,False,Partly correct,0.5,0.0
+E2,Answerable,Easy,Waste types,What are the four types of waste that a household should segregate?,"The four types are: (1) recyclables, which can be sold to junk shops; (2) biodegradables, which can be turned into compost; (3) residual waste, which is hauled off to the dumpsite; and (4) special or toxic waste, which needs special disposal.",NSWMC_Guidebook.pdf,18,NSWMC_Guidebook.pdf:18,"The four types of waste that a household should segregate according to the NSWMC Guidebook are:
+
+1. Recyclables - which can be sold to junk shops.",False,NSWMC_Guidebook.pdf:18; NSWMC_Guidebook.pdf:17; RA_9003.pdf:16,NSWMC Guidebook p.18; NSWMC Guidebook p.17; RA 9003 p.16,0.7106; 0.6407; 0.6086,0.3333333333333333,1.0,1.0,1.0,0.012,1.18,1.2,674,35,"A household in the Philippines is typically required to separate their waste into four main categories: recyclables, compostable materials, hazardous waste, and non-hazardous waste (also known as general waste or municipal solid waste). Here's a brief overview of each category:
+
+1. **Recyclables**: These include paper products like newspapers, magazines, cardboard boxes, plastic bottles, glass jars, aluminum cans, and other materials that can be recycled into new products.
+
+2. **Compostable Materials**: This includes organic waste such as food scraps, yard trimmings, and certain types of paper products. Composting these items helps reduce landfill space by converting them into nutrient-rich soil amendments.
+
+3. **Hazardous Waste**: This category includes items that pose a risk to human health or the environment if not handled properly. Examples include batteries, fluorescent light bulbs, electronics containing lead or mercury, paint, and medical waste.
+
+4. **Non-Hazardous Waste (General Waste)**: This encompasses all other types of waste that do not fall under the above categories. It may include plastics with additives, textiles, furniture, appliances, and miscellaneous items.
+
+It's important for households to follow local regulations regarding waste disposal methods and collection schedules to ensure proper segregation and safe handling of waste",False,8.64,256,Incorrect,Partly correct,Incorrect,Y,Partly correct,Gives only 1 of the 4 waste types (recyclables).,False,Incorrect,0.0,0.5
+E3,Answerable,Easy,Compostable / kitchen waste,How should I store kitchen waste while waiting for collection?,Drain the kitchen waste and place it in a covered container such as a can or a covered pail. It should never be placed in a plastic bag. A container with a flat base and a secure lid is best so animals cannot topple it.,NSWMC_Guidebook.pdf,22,NSWMC_Guidebook.pdf:22,Place kitchen waste in a covered container. A can or a covered pail will work well. Never place in a plastic bag.,False,NSWMC_Guidebook.pdf:22; RA9003_Info_Material.pdf:1; NSWMC_Guidebook.pdf:35,NSWMC Guidebook p.22; RA 9003 Information Material p.1; NSWMC Guidebook p.35,0.6716; 0.6256; 0.5488,0.3333333333333333,1.0,1.0,1.0,0.0252,0.92,0.95,758,27,"When storing kitchen waste, it's important to follow proper waste management practices to ensure that your household is compliant with local regulations regarding garbage disposal. Here’s how you can handle kitchen waste:
+
+1. **Separate Waste**: Start by separating your food scraps from other types of trash. Food waste includes fruits, vegetables, meat, fish, dairy products, eggshells, coffee grounds, tea leaves, and any other organic matter.
+
+2. **Use a Container**: Store your food waste in a sealed container or bin specifically designed for composting or recycling. This helps prevent odors and pests.
+
+3. **Keep It Dry**: Ensure that the container is dry as moisture attracts insects and rodents. If possible, use a plastic bag inside the container to keep the contents contained.
+
+4. **Avoid Overfilling**: Do not overfill the container to avoid spills and leaks. Use a lid or sealable cover to maintain hygiene and prevent contamination.
+
+5. **Store Properly**: Place the container in a location where it won’t be disturbed frequently but will still be easily accessible when needed. Avoid storing it near windows or areas prone to drafts.
+
+6. **Check Regularly**: Periodically check the container to make sure there isn't too much waste buildup. This prevents overflow and",False,8.41,256,Partly correct,Incorrect,Partly correct,Y,Partly correct,"Covered container, no plastic bag; missing “drain first”.",False,Partly correct,0.5,0.5
+E4,Answerable,Easy,Residual waste,How should I pack residual waste and sharp objects like broken items for collection?,"Separate residuals from kitchen waste and recyclables and place them in old plastic bags, not in sacks or cartons. Sharp, pointed objects should be carefully tied in hard cardboard to prevent injuring garbage collectors.",RA9003_Info_Material.pdf,1,RA9003_Info_Material.pdf:1,"For residual waste, place them in an old plastic bag. For sharp, pointed objects that need careful handling, they should be placed in hard cardboard and carefully tied to prevent injury during collection.
+
+[Source 3: NSWMC Guidebook, page 20]",False,NSWMC_Guidebook.pdf:22; RA9003_Info_Material.pdf:1; NSWMC_Guidebook.pdf:20,NSWMC Guidebook p.22; RA 9003 Information Material p.1; NSWMC Guidebook p.20,0.5933; 0.5677; 0.5357,0.3333333333333333,1.0,1.0,0.5,0.0137,2.34,2.36,812,54,"When packing residual waste and sharp objects such as broken items for collection, it's important to follow specific guidelines to ensure safety and proper handling. Here’s how you can do it:
+
+1. **Residual Waste:**
+   - **Organic Waste:** Place organic materials in a separate bag or bin that is clearly labeled with your name and address.
+   - **Non-Organic Waste:** Separate non-organic waste into different bags or bins based on their type (e.g., paper, plastic, glass).
+   - **Recyclables:** Ensure all recyclable materials are clean and dry before placing them in designated recycling containers.
+
+2. **Sharp Objects:**
+   - **Broken Items:** If you have broken items like glass bottles, metal cans, or other sharp objects, place them in a sturdy container designed specifically for hazardous waste disposal.
+   - **Labeling:** Clearly label the container with your name and contact information.
+   - **Handling:** Handle these items carefully to avoid injury. Use gloves if necessary and wear protective clothing if required by local regulations.
+
+3. **Packaging:**
+   - **Securely Close Containers:** Make sure all containers are securely closed to prevent any loose parts from falling out during transport.
+   - **Avoid Overcrowding:** Do",False,8.89,256,Partly correct,Incorrect,Partly correct,Y,Incorrect,Correct content but cites Guidebook p.20; the facts come from the Info Material.,False,Partly correct,0.5,0.0
+E5,Answerable,Easy,Hazardous waste (definition),"According to RA 6969, what makes a substance a hazardous substance?","A hazardous substance presents either (1) short-term acute hazards, such as acute toxicity by ingestion, inhalation or skin absorption, corrosivity, skin or eye contact hazards, or risk of fire or explosion; or (2) long-term environmental hazards, such as chronic toxicity, carcinogenicity, resistance to biodegradation, potential to pollute ground or surface water, or offensive odors.",RA_6969.pdf,2,RA_6969.pdf:2,"According to RA 6969, a substance is considered a hazardous substance if it presents either:
+1) short-term acute hazards, such as acute toxicity by ingestion, inhalation or skin absorption,
+corrosivity or other skin or eye contact hazards or the risk of fire or explosion;
+or",False,RA_6969.pdf:2; DAO_2013-22.pdf:10; DAO_2013-22.pdf:7,RA 6969 p.2; DAO 2013-22 p.10; DAO 2013-22 p.7,0.6251; 0.5729; 0.5189,0.3333333333333333,1.0,1.0,1.0,0.018,2.13,2.15,683,61,"RA 6969 is the Republic Act of 1987 which established the Bureau of Environmental Management (BEM) in the Department of Environment and Natural Resources (DENR). This law aims to regulate the handling, storage, transportation, treatment, disposal, and release of hazardous substances.
+
+Under this act, a substance is considered hazardous if it meets any one of the following criteria:
+
+1. It has been determined by scientific evidence to be capable of causing death, disease, mental derangement or physical injury.
+2. It can cause permanent damage to plants, animals, or human health.
+3. It can cause environmental pollution that may result in long-term harm to the environment.
+4. It can cause acute poisoning or serious illness when ingested, inhaled, or absorbed through skin contact.
+
+The specific list of hazardous substances under RA 6969 includes various chemicals such as lead, mercury, arsenic, cyanide, and others. The regulation also requires the proper labeling, packaging, and transport of these hazardous materials to prevent accidents and minimize their impact on public health and the environment.",False,7.48,224,Partly correct,Correct,Partly correct,Y,Incorrect,Only short-term hazards; answer cut off before long-term hazards.,False,Partly correct,0.5,0.0
+A1,Answerable,Average,Special waste,Which household items are considered special wastes under RA 9003?,"Special wastes are household hazardous wastes such as paints, thinners, household batteries, lead-acid batteries and spray canisters. They also include wastes from residential and commercial sources such as bulky wastes, consumer electronics, white goods, separately collected yard wastes, batteries, oil and tires, which are usually handled separately from other wastes.",RA_9003.pdf; DAO_2013-22.pdf,4 | 11,RA_9003.pdf:4; DAO_2013-22.pdf:11,"According to Source 1, special wastes under RA 9003 include:
+
+- Household hazardous wastes such as paints, thinners, household batteries, lead-acid batteries, spray canisters, etc.
+- Bulky wastes
+- Consumer electronics
+- White goods
+- Yard wastes collected separately
+- Batteries
+- Oil
+- Tires",False,DAO_2013-22.pdf:11; DAO_2013-22.pdf:19; NSWMC_Guidebook.pdf:5,DAO 2013-22 p.11; DAO 2013-22 p.19; NSWMC Guidebook p.5,0.682; 0.6142; 0.6047,0.3333333333333333,0.5,1.0,1.0,0.0312,2.41,2.44,650,72,"RA 9003, also known as the Ecological Solid Waste Management Act of 2000, is a law in the Philippines that aims to manage solid waste effectively by segregating it into different categories. Under this act, certain household items are classified as ""special wastes"" due to their hazardous nature or because they pose significant environmental risks when improperly disposed of.
+
+The specific items included in the list of special wastes under RA 9003 include:
+
+1. Batteries (including alkaline, lead-acid, nickel-cadmium, lithium-ion, etc.)
+2. Light bulbs (incandescent, fluorescent, LED)
+3. Mercury-containing products (such as thermometers, barometers, blood pressure monitors, etc.)
+4. Paints and solvents
+5. Aerosol cans
+6. Electronic waste (e-waste) including computers, televisions, cell phones, and other electronic devices
+7. Medical waste
+8. Hazardous chemicals
+
+These items are considered special wastes because they contain substances that can be harmful if not managed properly, such as mercury from broken thermometers, lead from batteries, or toxic chemicals found in paints and electronics. Proper disposal of these items is crucial to prevent pollution and protect public health and the environment",False,8.51,256,Correct,Partly correct,Correct,Y,Partly correct,Complete list of special wastes.,False,Correct,1.0,0.5
+A2,Answerable,Average,Residual waste,"Are used diapers and Styrofoam food packs biodegradable, recyclable or residual waste?","They are residual waste. The guidebook lists used tissue paper, diapers and cotton, and foil wrappers and soiled polystyrene (Styrofoam) packaging used in fast-food packs and coffee cups, under residual waste, which ends up in the dumpsite or landfill.",NSWMC_Guidebook.pdf,21,NSWMC_Guidebook.pdf:21,"Used diapers and Styrofoam food packs are considered non-biodegradable and residual waste.
+
+For more details, refer to Source 3: NSWMC Guidebook, page 9.",False,NSWMC_Guidebook.pdf:12; NSWMC_Guidebook.pdf:42; NSWMC_Guidebook.pdf:9,NSWMC Guidebook p.12; NSWMC Guidebook p.42; NSWMC Guidebook p.9,0.63; 0.5985; 0.5942,0.0,0.0,0.0,0.0,0.0131,1.33,1.35,617,39,"Used diapers and Styrofoam food packs are typically classified as non-biodegradable and non-recyclable waste in most regions due to their composition and environmental impact.
+
+1. **Styrofoam Food Packs**: These are often made from polystyrene foam, which is a synthetic material that does not easily decompose under normal conditions. Polystyrene can take hundreds of years to break down completely, making it difficult to recycle effectively. Additionally, styrofoam packing peanuts and other components may be contaminated with food residues, further complicating recycling efforts.
+
+2. **Used Diapers**: Used disposable diapers are generally considered hazardous waste rather than regular trash because they contain materials like plastic, rubber, and potentially harmful chemicals such as chlorine bleach. They cannot be recycled and should be disposed of according to local regulations regarding medical waste disposal.
+
+In summary:
+- **Biodegradable**: No.
+- **Recyclable**: No.
+- **Residual Waste**: Yes (for both items).",False,7.15,202,Partly correct,Partly correct,Partly correct,N,Partly correct,“Residual” is correct but not in the retrieved chunks (Hit@3 = 0).,True,Partly correct,0.5,0.5
+A3,Answerable,Average,Composting,"What can I put in a compost pile at home, and what should I keep out of it?","Kitchen waste (food scraps, fish and animal skin and innards, seeds, vegetable and fruit trimmings, shells and seafood, coffee grounds, tea bags, used paper napkins, egg shells, dried pet or animal waste) and garden waste (grass cuttings, leaves, twigs, branches and other woody material) can be composted. Human waste and dead animals should not be included, and charcoal ashes should not be mixed in because they kill the microorganisms.",NSWMC_Guidebook.pdf,26,NSWMC_Guidebook.pdf:26,"According to the NSWMC Guidebook:
+
+- Kitchen waste: food scraps, fish and animal skin and innards, seeds, vegetable and fruit trimmings, shells and seafood, coffee grounds, tea bags, used paper napkins, eggshells, dried pet or animal waste.
+- Garden waste: grass cuttings, leaves, twigs and branches, other woody material.
+
+The guidebook states that human waste and dead animals should not be included in composting due to hygiene concerns and unpleasant odors. Additionally, they mention that charcoal ashes should not be mixed in the compost as it will kill the microorganisms.",False,NSWMC_Guidebook.pdf:26; RA9003_Info_Material.pdf:1; NSWMC_Guidebook.pdf:40,NSWMC Guidebook p.26; RA 9003 Information Material p.1; NSWMC Guidebook p.40,0.6619; 0.5949; 0.5741,0.3333333333333333,1.0,1.0,1.0,0.0105,4.1,4.11,768,126,"For your compost pile at home, you can include items like fruit and vegetable scraps, coffee grounds, eggshells, grass clippings, leaves, straw, shredded paper, and yard trimmings such as twigs and branches. Avoid putting meat, dairy products, oils, diseased plants, weeds with seeds, and pet waste in your compost pile.",False,2.36,74,Correct,Partly correct,Correct,Y,Partly correct,"Complete, including human waste, dead animals and charcoal ashes.",False,Correct,1.0,0.5
+A4,Answerable,Average,Special waste (classification),"Under DAO 2013-22, what waste number covers household hazardous wastes like busted lamps and household batteries?","They fall under waste number M507, Special Wastes: household hazardous wastes such as paints, thinners, household batteries, lead-acid batteries and spray canisters consolidated by MRFs, including consumer electronics, white goods, batteries, oil and busted lamps.",DAO_2013-22.pdf,18,DAO_2013-22.pdf:18,[B201-B299],False,DAO_2013-22.pdf:20; DAO_2013-22.pdf:14; DAO_2013-22.pdf:11,DAO 2013-22 p.20; DAO 2013-22 p.14; DAO 2013-22 p.11,0.6297; 0.6101; 0.6082,0.0,0.0,0.0,0.0,0.0101,0.4,0.42,673,10,"According to the Department of Environment and Natural Resources (DENR) Order No. 2013-22, which is a policy directive related to solid waste management in the Philippines, household hazardous wastes such as broken lamps and household batteries fall under Waste Number 4.
+
+Waste Numbers in this context refer to the categories used by local government units (LGUs) to classify different types of waste for collection, transportation, and disposal purposes. The specific Waste Number assigned to household hazardous wastes can vary depending on the LGU's implementation guidelines or policies, but generally, they would be categorized under Waste Number 4.
+
+It's important to note that while these items might be considered hazardous waste, their classification may also depend on factors such as the type of material, its potential hazards, and the regulations set forth by the relevant environmental authorities.",False,5.46,170,Incorrect,Incorrect,Incorrect,N,Incorrect,Answer is only “[B201-B299]”; no M507. Page 18 not retrieved (OCR table).,True,Incorrect,0.0,0.0
+A5,Answerable,Average,Penalties,What is the penalty for littering or dumping waste in public places under RA 9003?,"Littering, throwing or dumping waste in public places such as roads, sidewalks, canals, esteros or parks is punished with a fine of P300 to P1,000, or community service of 1 to 15 days in the LGU where it was committed, or both.",RA_9003.pdf; RA9003_Info_Material.pdf,23; 24 | 1,RA_9003.pdf:23; RA_9003.pdf:24; RA9003_Info_Material.pdf:1,"Under RA 9003, the penalty for littering or dumping waste in public places includes a fine of not less than P300 but not more than P1,000, or rendering of community service for not less than one day to no more than 15 days to an LGU where such prohibited acts are committed, or both.",False,NSWMC_Guidebook.pdf:16; NSWMC_Guidebook.pdf:14; RA9003_Info_Material.pdf:1,NSWMC Guidebook p.16; NSWMC Guidebook p.14; RA 9003 Information Material p.1,0.6805; 0.6392; 0.6283,0.3333333333333333,0.3333333333333333,1.0,0.3333333333333333,0.018,3.08,3.11,809,75,"Under Republic Act (RA) No. 9003, commonly known as the Ecological Solid Waste Management Act of 2000, there are penalties for littering or dumping waste in public places. The act imposes fines ranging from P100 to P500 per violation.
+
+Additionally, individuals who violate this law may be subject to imprisonment for up to six months or a fine not exceeding P500, or both. It's important to note that these laws aim to promote environmental sustainability by encouraging proper disposal of solid waste through recycling and composting programs.",False,4.51,120,Correct,Correct,Correct,Y,Incorrect,"P300 to P1,000 or 1 to 15 days of community service, or both. No-RAG gives wrong amounts.",True,Correct,1.0,0.0
+D1,Answerable,Difficult,Batteries,I have an old car battery at home. How should I classify and dispose of it?,"A car (lead-acid) battery is special or hazardous household waste: RA 9003 lists lead-acid batteries under special wastes, and DAO 2013-22 classifies them under M507 Special Wastes. It must not be mixed with other waste, and car batteries can be traded in or returned at any battery dealer.",NSWMC_Guidebook.pdf; RA_9003.pdf; DAO_2013-22.pdf,19; 44 | 4 | 18,NSWMC_Guidebook.pdf:19; NSWMC_Guidebook.pdf:44; RA_9003.pdf:4; DAO_2013-22.pdf:18,Car batteries fall under the category of Special/Hazardous waste according to the Waste Analysis and Characterization Survey (WACS). They must be handled with caution due to potential toxicity. Proper disposal involves trading them in at any battery dealer or taking them to a recycling facility if available.,False,NSWMC_Guidebook.pdf:19; DAO_2013-22.pdf:61; RA_9003.pdf:17,NSWMC Guidebook p.19; DAO 2013-22 p.61; RA 9003 p.17,0.5203; 0.4228; 0.3576,0.3333333333333333,0.25,1.0,1.0,0.012,1.93,1.94,726,57,"When disposing of an old car battery, you should consider its hazardous nature and follow proper disposal guidelines to ensure safety and environmental protection. Here’s how you can handle it:
+
+1. **Check Local Regulations**: First, check your local regulations regarding the disposal of automotive batteries. Some areas may require special handling or specific disposal methods.
+
+2. **Battery Recycling Programs**: Many communities offer recycling programs specifically for used car batteries. These programs often accept lead-acid batteries and provide a safe way to dispose of them without harming the environment.
+
+3. **Do Not Dispose in Regular Landfills**: Do not throw old car batteries into regular landfills. This practice is illegal and harmful because batteries contain heavy metals like lead that can leach into soil and groundwater if they end up in landfills.
+
+4. **Use Proper Disposal Methods**: If there are no recycling options available locally, you might need to take the battery to a hazardous waste collection site. Check with your city or county government for such facilities.
+
+5. **Avoid Open Burning**: Never burn old car batteries as this releases toxic chemicals into the air and can be dangerous.
+
+6. **Follow Manufacturer Instructions**: Always refer to the manufacturer's instructions for any specific guidance about what to do with old batteries.
+
+By following these steps, you",False,8.21,256,Partly correct,Partly correct,Partly correct,Y,Partly correct,Special/hazardous and dealer trade-in correct; credits the classification to “WACS”.,True,Partly correct,0.5,0.5
+D2,Answerable,Difficult,Consumer electronics,"Is an old cellphone considered hazardous waste, and why?","Yes, when discarded. DAO 2013-22 classifies waste electrical and electronic equipment (WEEE) under M506 because it contains hazardous components such as lead, cadmium, mercury and hexavalent chromium, and RA 9003 lists consumer electronics among special wastes that are handled separately from ordinary waste.",DAO_2013-22.pdf; RA_9003.pdf,18 | 4,DAO_2013-22.pdf:18; RA_9003.pdf:4,"Yes, an old cellphone is considered hazardous waste because it contains materials like lead, mercury, and cadmium, which are toxic and can pose health risks if improperly disposed of. The context provided mentions medical waste requiring special handling due to its infectious nature, indicating that even non-electronic items can fall under hazardous waste categories when they contain harmful components.",False,NSWMC_Guidebook.pdf:19; RA_6969.pdf:2; NSWMC_Guidebook.pdf:9,NSWMC Guidebook p.19; RA 6969 p.2; NSWMC Guidebook p.9,0.4741; 0.4699; 0.4532,0.0,0.0,0.0,0.0,0.0089,2.31,2.33,555,70,"No, an old cell phone is not typically classified as hazardous waste in most jurisdictions. Hazardous waste refers to materials that can be harmful if they come into contact with people or the environment. Cell phones contain various components such as batteries, plastics, metals, and other materials that do not generally pose a significant risk of harm when disposed of properly.
+
+However, it's important to note that some older cell phones may have been manufactured using materials that could potentially be hazardous under certain conditions. For example:
+
+1. **Batteries**: Older cell phones often use lead-acid batteries, which can be dangerous if improperly disposed of.
+2. **Plastic Components**: Some plastic parts might contain chemicals like phthalates, which were used in earlier versions but are now regulated due to health concerns.
+3. **Metal Parts**: Certain metal alloys used in early cell phones might contain heavy metals that could leach out during disposal.
+
+To ensure safety and environmental protection, many countries have regulations regarding the proper handling and disposal of electronic devices, including cell phones. These regulations aim to prevent hazardous substances from entering landfills or water bodies.
+
+If you're unsure about whether your specific cell phone poses any risks, consulting local recycling guidelines or contacting the manufacturer directly would provide more accurate advice.",False,8.66,254,Partly correct,Partly correct,Partly correct,N,Incorrect,“Yes” is correct but the reasons are not in the retrieved chunks. No-RAG says “No”.,True,Partly correct,0.5,0.0
+D3,Answerable,Difficult,Recyclables (paper),My old newspapers got wet in the rain. Can they still go with the recyclables?,"Not as they are. The guidebook says wet paper should first be dried out, or it can be included in biodegradable waste. The RA 9003 information material adds that paper should not be given to collectors when it rains because wet paper becomes compostable.",NSWMC_Guidebook.pdf; RA9003_Info_Material.pdf,20 | 1,NSWMC_Guidebook.pdf:20; RA9003_Info_Material.pdf:1,"No, according to the NSWMC Guidebook, your old newspapers cannot go with the recyclables because they become compostable when wet.",False,NSWMC_Guidebook.pdf:20; NSWMC_Guidebook.pdf:22; RA9003_Info_Material.pdf:1,NSWMC Guidebook p.20; NSWMC Guidebook p.22; RA 9003 Information Material p.1,0.5272; 0.4754; 0.4619,0.6666666666666666,1.0,1.0,1.0,0.009,1.01,1.02,829,28,"Yes, your old newspapers can still be recycled even if they get wet in the rain. Wet newspapers can be dried out before recycling to ensure that they don't affect the quality of the paper products made from them. However, it's important to handle wet materials carefully to avoid damaging them further. If you have a large amount of wet newspapers, consider using a dehumidifier or drying rack to dry them properly before placing them in your recycling bin.",False,2.96,92,Partly correct,Partly correct,Partly correct,Y,Partly correct,Says wet paper becomes compostable; missing “dry it first”.,True,Partly correct,0.5,0.5
+D4,Answerable,Difficult,Segregation at source,Should waste be segregated at home or sorted later at the barangay MRF?,"At home (at the source). RA 9003 Sec. 21 requires segregation to be primarily conducted at the source, including household, institutional, industrial, commercial and agricultural sources. The guidebook calls segregation at source the key to solid waste management and says sorting unsegregated trash at the MRF is not advisable for environmental and hygienic reasons.",RA_9003.pdf; NSWMC_Guidebook.pdf,16 | 18; 38,RA_9003.pdf:16; NSWMC_Guidebook.pdf:18; NSWMC_Guidebook.pdf:38,Segregation should ideally begin at home (Source 1).,False,NSWMC_Guidebook.pdf:17; NSWMC_Guidebook.pdf:25; NSWMC_Guidebook.pdf:18,NSWMC Guidebook p.17; NSWMC Guidebook p.25; NSWMC Guidebook p.18,0.7174; 0.7144; 0.6945,0.3333333333333333,0.3333333333333333,1.0,0.3333333333333333,0.0084,0.48,0.49,623,13,"Waste should generally be segregated at home to ensure proper disposal and recycling. This practice helps in reducing contamination of recyclables, which can damage machinery used in sorting processes. Sorting waste at home also makes it easier to recycle materials like paper, plastic, glass, and metal that have different melting points and require specific handling.
+
+However, if you live in a community where there is no centralized municipal solid waste (MSW) recycling facility (MRF), then sorting your waste may not be feasible due to lack of infrastructure. In such cases, it might be necessary to sort your waste at home but still dispose of it through other means, such as composting organic waste or disposing of non-recyclable items according to local regulations.
+
+It's important to note that while individual efforts contribute to environmental sustainability, collective action through community-based initiatives and government policies is crucial for effective waste management systems.",False,6.39,178,Partly correct,Correct,Partly correct,Y,Partly correct,“At home” is correct but one line only; no Sec. 21 and no MRF reason.,False,Partly correct,0.5,0.5
+D5,Answerable,Difficult,Oil,Can I throw used motor oil in the regular trash?,"No. Used motor oil is special or toxic household waste that requires special disposal and must not be mixed with other waste. The guidebook says it can be brought or returned to gas stations, and DAO 2013-22 lists used or waste oil under Class I (Oil).",NSWMC_Guidebook.pdf; DAO_2013-22.pdf,18; 19; 44 | 16,NSWMC_Guidebook.pdf:18; NSWMC_Guidebook.pdf:19; NSWMC_Guidebook.pdf:44; DAO_2013-22.pdf:16,"No, you should never throw used motor oil in the regular trash. Used motor oil must be brought to gas stations for recycling. [Source 1: NSWMC Guidebook, page 19]",False,NSWMC_Guidebook.pdf:19; NSWMC_Guidebook.pdf:11; NSWMC_Guidebook.pdf:12,NSWMC Guidebook p.19; NSWMC Guidebook p.11; NSWMC Guidebook p.12,0.6148; 0.4888; 0.4802,0.3333333333333333,0.25,1.0,1.0,0.0085,1.45,1.46,708,42,"No, you should not throw used motor oil in the regular trash. Used motor oil is a hazardous material that can be harmful to the environment if disposed of improperly. It contains chemicals that can leach into soil or water sources when it's poured down drains or thrown away with other household garbage. Instead, you should take used motor oil to a designated collection center or recycling facility where it will be safely processed and reused.",False,2.75,85,Correct,Correct,Correct,Y,Partly correct,"No, bring it to a gas station; grounded in Guidebook p.19.",True,Correct,1.0,0.5
+U1,Unanswerable,-,LGU-specific,"What day does the garbage truck collect residual waste in Barangay Plainview, Mandaluyong?",Expected behavior: say the documents do not contain local collection schedules and advise the user to ask their barangay or city/municipal environment office.,,-,,The garbage truck collects residual waste in Barangay Plainview on Mondays and Thursdays.,False,NSWMC_Guidebook.pdf:48; NSWMC_Guidebook.pdf:39; NSWMC_Guidebook.pdf:33,NSWMC Guidebook p.48; NSWMC Guidebook p.39; NSWMC Guidebook p.33,0.644; 0.6421; 0.6377,,,,,0.0101,0.67,0.68,742,18,"I'm sorry, but I don't have specific information about the collection schedule of the garbage truck in Barangay Plainview, Mandaluyong. This would typically be provided by local government authorities or through official city services websites. If you need this information, it's best to contact the barangay office directly or visit their website for up-to-date details regarding garbage collection schedules.",False,2.45,76,Hallucinated,Hallucinated,Hallucinated,N,Correct refusal,Invented “Mondays and Thursdays” from the sample schedule on Guidebook p.39.,True,Hallucinated,0.0,1.0
+U2,Unanswerable,-,Not in knowledge base (later law),What does the Extended Producer Responsibility Act of 2022 require from companies that sell plastic packaging?,Expected behavior: say the documents do not cover this law (it is not part of the knowledge base) and not answer from general knowledge.,,-,,The documents I have do not contain enough information to answer this.,True,RA_9003.pdf:17; RA_9003.pdf:17; RA_9003.pdf:17,RA 9003 p.17; RA 9003 p.17; RA 9003 p.17,0.6246; 0.5877; 0.546,,,,,0.0093,0.51,0.52,561,14,"The Extended Producer Responsibility (EPR) Act of 2022 in the Philippines requires companies that produce or import plastic packaging to take responsibility for the management, recycling, and disposal of their products' packaging after they have been used by consumers. This includes setting up collection systems, providing incentives for recycling, and ensuring proper disposal methods are available. The law aims to reduce littering and promote sustainable practices in the production and use of plastic packaging.",False,3.15,91,Correct refusal,Correct refusal,Correct refusal,Y,Hallucinated,Exact refusal sentence. No-RAG answers from general knowledge.,True,Correct refusal,1.0,0.0
+U3,Unanswerable,-,Not in knowledge base (current prices),How much does a junk shop pay per kilo for PET bottles today?,Expected behavior: say the documents do not give current buying prices for PET bottles. (The guidebook only mentions an old example price for tin cans; quoting it as a PET price counts as a hallucination.),,-,,The documents I have do not contain enough information to answer this.,True,NSWMC_Guidebook.pdf:22; NSWMC_Guidebook.pdf:47; NSWMC_Guidebook.pdf:7,NSWMC Guidebook p.22; NSWMC Guidebook p.47; NSWMC Guidebook p.7,0.4891; 0.4457; 0.4349,,,,,0.0112,0.53,0.54,756,14,"The price of PET (polyethylene terephthalate) bottles can vary depending on several factors, including market conditions, demand, and local regulations. However, as of my last update in 2023, there isn't a specific standard rate that I can provide for how much a junk shop typically pays per kilogram for PET bottles.
+
+In general, the cost is often determined by the quality and condition of the bottles, with higher-quality or more intact bottles fetching better prices than those that are damaged or partially used. Additionally, some areas may have recycling programs where they offer incentives to collectors, which could affect the overall value received from selling recycled materials like PET bottles.
+
+For accurate pricing information, it's best to contact local recycling centers or companies that specialize in collecting and processing recyclables directly. They will be able to give you up-to-date rates based on current market conditions and their specific practices.",False,6.38,184,Correct refusal,Correct refusal,Correct refusal,Y,Correct refusal,Both refuse to give a price.,True,Correct refusal,1.0,1.0
+U4,Unanswerable,-,Not in knowledge base (product brand),Which brand of composting enzyme should I buy for my backyard compost?,Expected behavior: say the documents do not recommend any brand. (The guidebook only says enzymes can be bought from dealers.),,-,,"To speed up composting, a biodigester or enzyme must be sprayed on the heap while being mixed. The enzyme contains effective microorganisms and can be bought in liquid form from dealers.",False,NSWMC_Guidebook.pdf:28; NSWMC_Guidebook.pdf:40; RA_9003.pdf:18,NSWMC Guidebook p.28; NSWMC Guidebook p.40; RA 9003 p.18,0.4884; 0.4567; 0.4219,,,,,0.0109,1.6,1.61,748,39,"There isn't a single ""best"" brand of composting enzyme, as different brands may have varying levels of effectiveness or compatibility with specific types of compost materials. However, some popular options include:
+
+1. Compost Tea: This is a liquid extract made from compost that can be used to improve soil health.
+
+2. Vermicomposting Enzymes: These enzymes help break down organic matter in worm bins.
+
+3. Bokashi Composters: These use microorganisms to ferment food scraps before they're added to regular compost piles.
+
+4. Commercial Compost Mixtures: Some commercial products combine various ingredients designed to speed up decomposition.
+
+5. DIY Compost Enzyme Solutions: You can make your own by mixing composted material with water and adding beneficial bacteria.
+
+When choosing a composting enzyme, consider factors like:
+- The type of compost you want to create (green vs. brown)
+- Your local climate and available resources
+- Any specific needs or challenges you might face
+
+It's also helpful to read reviews and compare product labels to ensure it matches what you need for your compost setup. Always follow instructions carefully when using any new composting tool or ingredient.",False,8.42,237,Correct refusal,Correct refusal,Correct refusal,Y,Hallucinated,Names no brand; says only that enzymes are sold by dealers.,True,Correct refusal,1.0,0.0
+U5,Unanswerable,-,LGU-specific (permit),How do I apply for a business permit to open a junk shop in Mandaluyong City?,Expected behavior: say the documents do not contain local business-permit procedures and advise the user to ask the city hall (business permits office) or the local environment office.,,-,,"To apply for a business permit to open a junk shop in Mandaluyong City, follow these steps:
+
+1. **Visit the Local Government Unit (LGU):** Go to the Municipal Office of Mandaluyong City or the Barangay Hall where your area is located.
+
+2. **Submit Required Documents:** Bring the following documents:
+   - A copy of your personal identification (e.g., driver's license).
+   - Proof of ownership of the land or premises where the junk shop will be operated.
+   - Business plan outlining the operations, including waste collection and processing plans.
+   - Financial statements showing sufficient capital to operate the junk shop.
+   - Any relevant licenses or certifications required for operating a business in Mandaluyong City.
+
+3. **Pay Fees:** Pay the applicable fee for opening a junk shop, which may include registration fees, taxes, and possibly additional charges based on the specific requirements of the municipality.
+
+4. **Obtain Approval:** Submit all the required documents and pay the fees. The LGU will review them and grant approval if they meet the criteria.
+
+5. **Finalize Permits:** Once approved, obtain the final permits needed for operation, such as a business license, garbage collection permit, etc.
+
+For more detailed guidance, refer to the [",False,NSWMC_Guidebook.pdf:36; DAO_2013-22.pdf:70; RA_9003.pdf:6,NSWMC Guidebook p.36; DAO 2013-22 p.70; RA 9003 p.6,0.4595; 0.4527; 0.4355,,,,,0.014,8.68,8.7,766,256,"To apply for a business permit to open a junk shop in Mandaluyong City, you will need to follow these steps:
+
+1. **Research Requirements**: First, review the specific requirements set by Mandaluyong City's local government regarding junk shops. These may include minimum area size, number of stalls, types of items allowed, hours of operation, etc.
+
+2. **Prepare Necessary Documents**:
+   - A valid identification (ID) card or passport.
+   - Proof of ownership of the land where the junk shop will be located.
+   - Business plan outlining your operations, including how you intend to manage waste properly.
+   - Financial statements showing sufficient capital to start and operate the business.
+   - Any other documents required by the city authorities.
+
+3. **Visit the Local Government Office**: Go to the Municipal Building in Mandaluyong City. The address is 500-504, San Juan St., Mandaluyong City, Philippines.
+
+4. **Submit Application Form**: Fill out the application form provided by the municipal office. Ensure that all details are accurate and complete.
+
+5. **Pay Fees**: Pay the prescribed fee for the business permit at the time of submission.
+
+6. **Attend Interview**: Some permits require an interview with relevant officials. Prepare",False,8.25,256,Hallucinated,Hallucinated,Hallucinated,N,Hallucinated,Both invent a permit procedure.,True,Hallucinated,0.0,0.0

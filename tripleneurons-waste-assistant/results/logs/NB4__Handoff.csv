@@ -1,0 +1,2 @@
+timestamp,member,notebook,item,value
+2026-11-10T22:28:02+08:00,TripleNeurons,NB4,NB2 configuration loaded,"{""config"": ""C4"", ""chunk_size"": 800, ""chunk_overlap"": 0, ""tests"": ""Medium chunks, no overlap""}"

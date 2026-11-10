@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waste Segregation Assistant</title>
+<meta name="description" content="Answers questions on Philippine waste classification and segregation from RA 9003, RA 6969, DAO 2013-22 and two NSWMC materials, with the document and page for every answer.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231F6B4A'/%3E%3Cpath d='M6 8h12M10 8V6h4v2M8 8l.7 10h6.6L16 8' fill='none' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M9 7V4h6v3"/><path d="M6 7l1 13h10l1-13"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+    </div>
+    <div>
+      <h1>Waste Segregation Assistant</h1>
+      <p>Answers from 5 Philippine sources &middot; TripleNeurons</p>
+    </div>
+  </div>
+  <div class="actions">
+    <span id="server-status" class="status" data-state="idle" role="status" aria-live="polite">Model server: not connected yet</span>
+    <button type="button" id="new-chat" class="btn btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+      New chat
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="side" aria-label="Knowledge base and examples">
+    <section class="card">
+      <h2>Knowledge base</h2>
+      <ul class="kb">
+        <li><span>RA 9003 (Ecological Solid Waste Management Act)</span><span class="pp">27 pp.</span></li>
+        <li><span>RA 6969 (Toxic Substances and Hazardous Wastes Act)</span><span class="pp">6 pp.</span></li>
+        <li><span>DENR DAO 2013-22 (hazardous wastes)</span><span class="pp">71 pp.</span></li>
+        <li><span>NSWMC Guidebook</span><span class="pp">56 pp.</span></li>
+        <li><span>RA 9003 Information Material</span><span class="pp">1 p.</span></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Try asking</h2>
+      <div class="examples">
+        <button type="button" class="example">How should I store kitchen waste while waiting for collection?</button>
+        <button type="button" class="example">Are used diapers and Styrofoam food packs biodegradable, recyclable or residual waste?</button>
+        <button type="button" class="example">I have an old car battery at home. How should I classify and dispose of it?</button>
+      </div>
+    </section>
+    <section class="note">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4A00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.5"/></svg>
+      <p>Information only, not legal advice. Collection schedules and local rules differ per LGU: ask your barangay or city environment office.</p>
+    </section>
+  </aside>
+
+  <main class="chat-panel">
+    <div id="chat" class="chat" aria-live="polite">
+      <div id="empty" class="empty">
+        <p class="empty-title">Ask about classifying or segregating waste</p>
+        <p>Every answer shows the document and page it came from. The model runs on a free server, so an answer takes about 15 to 40 seconds, and the first one can take a minute or two while the server wakes up.</p>
+      </div>
+    </div>
+    <form id="ask-form" class="composer" autocomplete="off">
+      <label for="question">Ask about waste classification or segregation</label>
+      <div class="row">
+        <input id="question" name="question" type="text" maxlength="500" placeholder="e.g. Where do busted fluorescent lamps go?" required>
+        <button type="submit" id="send" class="btn btn-primary btn-send">
+          Send
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      <p class="hint">Check the source before acting. Answers come from a 1.5-billion-parameter model and can be incomplete or wrong.</p>
+    </form>
+  </main>
+</div>
+
+<footer class="foot">
+  TripleNeurons &middot; ITC-C508 Final Project, Jos&eacute; Rizal University &middot; RAG with all-MiniLM-L6-v2, Chroma and Qwen2.5-1.5B-Instruct
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

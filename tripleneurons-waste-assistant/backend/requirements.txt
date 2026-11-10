@@ -1,0 +1,9 @@
+# Same library versions as the Colab run of Notebook 2 (gradio itself is set by sdk_version in README.md)
+torch
+transformers==5.22.2
+accelerate
+sentence-transformers==6.2.0
+langchain-core==1.7.4
+langchain-huggingface==1.2.3
+langchain-chroma==1.1.0
+chromadb==1.5.9
